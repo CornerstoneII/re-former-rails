@@ -1,6 +1,6 @@
 <h1>New User</h1>
 
-  <%= form_for @user, url: {action: "create"}, html: {class: "user"} do |f| %>
+  <%= form_for @user do |f| %>
 
     Username:<%= f.text_field :username, placeholder: "Your Username Here", class: 'form-control' %>
     <br /> <br />
