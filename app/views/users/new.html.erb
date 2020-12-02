@@ -1,16 +1,16 @@
 <h1>New User</h1>
 
   <%= form_for @user, url: {action: "create"}, html: {class: "user"} do |f| %>
-    <%= label_tag 'Username:' %>
-    <%= f.text_field :username %>
+
+    Username:<%= f.text_field :username, placeholder: "Your Username Here", class: 'form-control' %>
     <br /> <br />
 
-    <%= label_tag 'Email:' %>
-    <%= f.text_field :email %>
+
+    Email:<%= f.text_field :email, placeholder: "example@example.com", class: 'form-control'  %>
     <br /> <br />
 
-    <%= label_tag 'Password:' %>
-    <%= f.password_field :password %>
+
+    Password:<%= f.password_field :password %>
     <br /> <br />
 
     <%= f.submit "Submit", name: nil %>
